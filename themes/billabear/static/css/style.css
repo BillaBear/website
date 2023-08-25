@@ -769,33 +769,67 @@ html {
   }
 }
 
-#title {
+.article-title {
   font-size: 2.5rem !important;
   padding-bottom: 1rem;
 }
-#article h2 {
+.article h2 {
   font-size: 2rem;
   padding-bottom: 1rem;
 }
 
-#article h3 {
+.article h3 {
   font-size: 1.5rem;
   padding-bottom: 1rem;
 }
-#article h4 {
+.article h4 {
   font-size: 1.5rem;
   padding-bottom: 1rem;
 }
 
-#article p {
+.article p {
   padding-bottom: 1rem;
 }
 
-#article ul {
+.article ul {
   padding-bottom: 0.5rem;
 }
 
-#article li {
+.article li {
   list-style: disc;
   margin-left: 1rem;
+}
+
+.sidebar {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.sidebar-panel {
+  border: 1px solid #FAD000;
+  border-radius: 5px;;
+}
+
+.sidebar-header {
+  padding: 10px;
+  font-size: 15pt;
+  color: white;
+  font-weight: bold;
+  background-color: #FAD000;
+}
+
+.sidebar-content {
+  padding: 10px;
+}
+
+.sidebar-content a {
+  text-decoration: underline;
+ }
+.sidebar-content a:hover {
+  color: #F58C00;
+}
+
+.sidebar-content li {
+  list-style: disc;
+  margin-left: 25px;
 }

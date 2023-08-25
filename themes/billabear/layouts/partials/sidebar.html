@@ -1,0 +1,18 @@
+<div class="sidebar">
+    <div class="sidebar-panel">
+        <div class="sidebar-header">
+            Latest Posts
+        </div>
+        <div class="sidebar-content">
+        
+            <ul>
+                <!-- orders content according to the "publishdate" field in front matter -->
+                {{ range first 10 .Pages.ByPublishDate }}
+                  <li>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                  </li>
+                {{ end }}
+              </ul>
+        </div>
+    </div>
+</div>

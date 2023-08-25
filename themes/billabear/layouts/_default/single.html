@@ -6,8 +6,8 @@
 
             <div class="col-sm-8">
 
-                <section id="article">
-                    <h1 id="title">{{ .Title }}</h1>
+                <section class="article">
+                    <h1 class="article-title">{{ .Title }}</h1>
 
                     <section>
                         <p><strong>Written by:</strong> {{ $.Param "author.display_name" }} <strong>Published on:</strong> {{ .Date.Format "Mon Jan 2, 2006" }}</p>
@@ -21,7 +21,9 @@
 
 
             </div>
-            <div class="col-sm-4">col-sm-4</div>
+            <div class="col-sm-4">
+              {{- partial "sidebar.html" . -}}
+            </div>
 
 
         </div>
