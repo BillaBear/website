@@ -1,0 +1,4 @@
+baseURL = 'http://billabear.com'
+languageCode = 'en-us'
+title = 'BillaBear'
+theme = 'billabear'

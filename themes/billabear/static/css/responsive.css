@@ -1,0 +1,656 @@
+@media (min-width: 320px) and (max-width: 575px) {
+  .header-section .navbar-toggler {
+    padding: 1rem;
+    border: 0;
+  }
+  .header-section .navbar-toggler i {
+    color: #F58C00;
+  }
+  .header-section .navbar-nav .nav-item .feature-menu-box {
+    padding: 1.5rem;
+    grid-template-columns: 100%;
+    min-width: auto;
+  }
+  .header-section .navbar-nav .nav-item .feature-menu-box ul:last-child {
+    margin-top: 2rem;
+  }
+  .header-section {
+    padding-bottom: 1rem;
+  }
+  .hero-txt-wrap p {
+    font-size: 1rem;
+  }
+  .hero-txt-wrap h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .hero-txt-wrap .hero_btn .btn {
+    font-size: 1rem !important;
+  }
+  br {
+    display: none;
+  }
+  .header-section .navbar-nav .nav-item .nav-link {
+    text-align: center;
+    margin: 0;
+    margin-top: 1rem;
+  }
+  .header-section .d-flex {
+    justify-content: center;
+  }
+  .header-section .navbar-brand img {
+    width: 5rem;
+    height: auto;
+  }
+  .hero-section {
+    min-height: auto;
+    max-height: auto;
+  }
+  .hero-txt-wrap {
+    margin-top: 0;
+    padding-bottom: 2rem;
+  }
+  .book-demo-sec .book-demo-txt a,
+  .common-bttn {
+    padding: 0.8rem 2rem;
+    font-size: 15px;
+  }
+  .dev-head-tab .nav .nav-item .nav-link {
+    padding: 0.8rem 1.5rem;
+    font-size: 15px;
+  }
+  .devloper-txt-box {
+    margin-top: 2rem;
+  }
+  .devloper-txt-box h6 {
+    font-size: 1rem;
+  }
+  .devloper-txt-box h2 {
+    font-size: 2.6rem;
+    line-height: 3rem;
+  }
+  .devloper-txt-box p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  .features-section .feature-box-item {
+    padding: 2rem;
+    height: auto;
+    margin-top: 2rem !important;
+  }
+  .features-section .feature-box-item .txt h5 {
+    font-size: 1.8rem;
+  }
+  .features-section .feature-box-item .txt p {
+    font-size: 1rem;
+  }
+  .features-section .feature-box-item .icon {
+    width: 6rem;
+    height: 6rem;
+  }
+  .features-section .mt-25 {
+    margin-top: 0 !important;
+  }
+  .pa-y6 {
+    padding: 3rem 0;
+  }
+  .customer-feedback-box p,
+  .common-para {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+  .common-title {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+  }
+  .customer-img-box img {
+    width: 100%;
+  }
+  .customer-feedback-box {
+    margin-left: 0;
+  }
+  .choice-use-sec .slick-dots {
+    right: 85%;
+    bottom: -3rem;
+  }
+  .more-rev a {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+  .customer-feedback-box h5 {
+    font-size: 1.2rem;
+  }
+  .customer-feedback-box h6 {
+    font-size: 1rem;
+  }
+  .faq-ask-wrap .accordion .accordion-item {
+    padding: 1rem;
+  }
+  .faq-ask-wrap .accordion .accordion-item button {
+    font-size: 15px;
+  }
+  .book-demo-sec .book-demo-txt .book-demo-right-img {
+    display: none;
+  }
+  .book-demo-sec .book-demo-txt {
+    padding: 3rem 0;
+  }
+  .book-demo-sec .book-demo-txt h4 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+  .book-demo-sec .book-demo-txt p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .footer_section {
+    padding: 3rem 0 1.5rem;
+  }
+  .ftr-copy h6 {
+    margin-bottom: 0.5rem;
+  }
+  .ftr-copy p,
+  .ftr-copy h6 {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+    text-align: justify;
+  }
+  .ftr-links ul li a {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  #back-to-top {
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+  }
+  #back-to-top i {
+    color: #F58C00;
+  }
+  .ftr-links h6 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .dev-img-box-one {
+    min-height: 17rem;
+  }
+  .customer-feedback-box h5 {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 575px) and (max-width: 767px) {
+  .header-section .navbar-toggler {
+    padding: 1rem;
+    border: 0;
+  }
+  .header-section .navbar-toggler i {
+    color: #F58C00;
+  }
+  .dev-img-box-one {
+    min-height: 17rem;
+  }
+  .header-section .navbar-nav .nav-item .feature-menu-box {
+    padding: 1.5rem;
+    grid-template-columns: 100%;
+    min-width: auto;
+  }
+  .header-section .navbar-nav .nav-item .feature-menu-box ul:last-child {
+    margin-top: 2rem;
+  }
+  .header-section {
+    padding-bottom: 1rem;
+  }
+  .hero-txt-wrap p {
+    font-size: 1rem;
+  }
+  .hero-txt-wrap h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .hero-txt-wrap .hero_btn .btn {
+    font-size: 1rem !important;
+  }
+  br {
+    display: none;
+  }
+  .header-section .navbar-nav .nav-item .nav-link {
+    text-align: center;
+    margin: 0;
+    margin-top: 1rem;
+  }
+  .header-section .d-flex {
+    justify-content: center;
+  }
+  .header-section .navbar-brand img {
+    width: 5rem;
+    height: auto;
+  }
+  .hero-section {
+    min-height: auto;
+    max-height: auto;
+  }
+  .hero-txt-wrap {
+    margin-top: 0;
+    padding-bottom: 2rem;
+  }
+  .book-demo-sec .book-demo-txt a,
+  .common-bttn {
+    padding: 0.8rem 2rem;
+    font-size: 15px;
+  }
+  .dev-head-tab .nav .nav-item .nav-link {
+    padding: 0.8rem 1.5rem;
+    font-size: 15px;
+  }
+  .devloper-txt-box {
+    margin-top: 2rem;
+  }
+  .devloper-txt-box h6 {
+    font-size: 1rem;
+  }
+  .devloper-txt-box h2 {
+    font-size: 2.6rem;
+    line-height: 3rem;
+  }
+  .devloper-txt-box p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  .features-section .feature-box-item {
+    padding: 2rem;
+    height: auto;
+    margin-top: 2rem !important;
+  }
+  .features-section .feature-box-item .txt h5 {
+    font-size: 1.8rem;
+  }
+  .features-section .feature-box-item .txt p {
+    font-size: 1rem;
+  }
+  .features-section .feature-box-item .icon {
+    width: 6rem;
+    height: 6rem;
+  }
+  .features-section .mt-25 {
+    margin-top: 0 !important;
+  }
+  .pa-y6 {
+    padding: 3rem 0;
+  }
+  .customer-feedback-box p,
+  .common-para {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+  .common-title {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+  }
+  .customer-img-box img {
+    width: 100%;
+  }
+  .customer-feedback-box {
+    margin-left: 0;
+  }
+  .choice-use-sec .slick-dots {
+    right: 85%;
+    bottom: -3rem;
+  }
+  .more-rev a {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+  .customer-feedback-box h5 {
+    font-size: 1.2rem;
+  }
+  .customer-feedback-box h6 {
+    font-size: 1rem;
+  }
+  .faq-ask-wrap .accordion .accordion-item {
+    padding: 1rem;
+  }
+  .faq-ask-wrap .accordion .accordion-item button {
+    font-size: 15px;
+  }
+  .book-demo-sec .book-demo-txt .book-demo-right-img {
+    display: none;
+  }
+  .book-demo-sec .book-demo-txt {
+    padding: 3rem 0;
+  }
+  .book-demo-sec .book-demo-txt h4 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+  .book-demo-sec .book-demo-txt p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .footer_section {
+    padding: 3rem 0 1.5rem;
+  }
+  .ftr-copy h6 {
+    margin-bottom: 0.5rem;
+  }
+  .ftr-copy p,
+  .ftr-copy h6 {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+    text-align: justify;
+  }
+  .ftr-links ul li a {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  #back-to-top {
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+  }
+  #back-to-top i {
+    color: #F58C00;
+  }
+  .ftr-links h6 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  .header-section .navbar-toggler {
+    padding: 1rem;
+    border: 0;
+  }
+  .header-section .navbar-toggler i {
+    color: #F58C00;
+  }
+  .header-section {
+    padding-bottom: 1rem;
+  }
+  .hero-txt-wrap p {
+    font-size: 1rem;
+  }
+  .hero-txt-wrap h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .hero-txt-wrap .hero_btn .btn {
+    font-size: 1rem !important;
+  }
+  br {
+    display: none;
+  }
+  .header-section .navbar-nav .nav-item .nav-link {
+    text-align: center;
+    margin: 0;
+    margin-top: 1rem;
+  }
+  .header-section .d-flex {
+    justify-content: center;
+  }
+  .header-section .navbar-brand img {
+    width: 5rem;
+    height: auto;
+  }
+  .hero-section {
+    min-height: auto;
+    max-height: auto;
+  }
+  .hero-txt-wrap {
+    margin-top: 0;
+    padding-bottom: 2rem;
+  }
+  .book-demo-sec .book-demo-txt a,
+  .common-bttn {
+    padding: 0.8rem 2rem;
+    font-size: 15px;
+  }
+  .dev-head-tab .nav .nav-item .nav-link {
+    padding: 0.8rem 1.5rem;
+    font-size: 15px;
+  }
+  .devloper-txt-box {
+    margin-top: 2rem;
+  }
+  .devloper-txt-box h6 {
+    font-size: 1rem;
+  }
+  .devloper-txt-box h2 {
+    font-size: 2.6rem;
+    line-height: 3rem;
+  }
+  .devloper-txt-box p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  .features-section .feature-box-item {
+    padding: 2rem;
+    height: auto;
+    margin-top: 2rem !important;
+  }
+  .features-section .feature-box-item .txt h5 {
+    font-size: 1.8rem;
+  }
+  .features-section .feature-box-item .txt p {
+    font-size: 1rem;
+  }
+  .features-section .feature-box-item .icon {
+    width: 6rem;
+    height: 6rem;
+  }
+  .features-section .mt-25 {
+    margin-top: 0 !important;
+  }
+  .pa-y6 {
+    padding: 3rem 0;
+  }
+  .customer-feedback-box p,
+  .common-para {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+  .common-title {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+  }
+  .customer-img-box img {
+    width: 100%;
+  }
+  .customer-feedback-box {
+    margin-left: 0;
+  }
+  .choice-use-sec .slick-dots {
+    right: 85%;
+    bottom: -3rem;
+  }
+  .more-rev a {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+  .customer-feedback-box h5 {
+    font-size: 1.2rem;
+  }
+  .customer-feedback-box h6 {
+    font-size: 1rem;
+  }
+  .faq-ask-wrap .accordion .accordion-item {
+    padding: 1rem;
+  }
+  .faq-ask-wrap .accordion .accordion-item button {
+    font-size: 15px;
+  }
+  .book-demo-sec .book-demo-txt .book-demo-right-img {
+    display: none;
+  }
+  .book-demo-sec .book-demo-txt {
+    padding: 3rem 0;
+  }
+  .book-demo-sec .book-demo-txt h4 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+  .book-demo-sec .book-demo-txt p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .footer_section {
+    padding: 3rem 0 1.5rem;
+  }
+  .ftr-copy h6 {
+    margin-bottom: 0.5rem;
+  }
+  .ftr-copy p,
+  .ftr-copy h6 {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+    text-align: justify;
+  }
+  .ftr-links ul li a {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  #back-to-top {
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+  }
+  #back-to-top i {
+    color: #F58C00;
+  }
+  .ftr-links h6 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .header-section .navbar-brand img {
+    width: 7rem;
+    height: auto;
+  }
+  .header-section .navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+  }
+  .hero-section {
+    min-height: 50rem;
+  }
+  .hero-txt-wrap {
+    margin-top: 4rem;
+  }
+  .hero-txt-wrap h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  .hero-txt-wrap p {
+    font-size: 1rem;
+    width: 80%;
+  }
+  .features-section .feature-box-item {
+    padding: 1.8rem;
+  }
+  .book-demo-sec .book-demo-txt a,
+  .common-bttn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+  .pa-y6 {
+    padding: 4rem 0;
+  }
+  .dev-head-tab .nav .nav-item .nav-link {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+  .devloper-txt-box h2 {
+    font-size: 3rem;
+  }
+  .devloper-txt-box p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .ftr-copy p,
+  .ftr-copy h6,
+  .ftr-links ul li a,
+  .common-para,
+  .features-section .feature-box-item .txt p {
+    font-size: 1rem;
+  }
+  .features-section .feature-box-item .txt h5 {
+    font-size: 1.5rem;
+  }
+  .common-title {
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+  }
+  .book-demo-sec .book-demo-txt p,
+  .customer-feedback-box p {
+    font-size: 1rem;
+  }
+  .book-demo-sec .book-demo-txt h4 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1899px) {
+  .header-section .navbar-brand img {
+    width: 8rem;
+    height: auto;
+  }
+  .header-section .navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+  }
+  .hero-section {
+    min-height: 50rem;
+  }
+  .hero-txt-wrap {
+    margin-top: 4rem;
+  }
+  .hero-txt-wrap h1 {
+    font-size: 3.8rem;
+  }
+  .hero-txt-wrap p {
+    font-size: 1rem;
+    width: 80%;
+  }
+  .book-demo-sec .book-demo-txt a,
+  .common-bttn {
+    padding: 1.1rem 2rem;
+    font-size: 1.1rem;
+  }
+  .pa-y6 {
+    padding: 5rem 0;
+  }
+  .dev-head-tab .nav .nav-item .nav-link {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+  }
+  .devloper-txt-box h2 {
+    font-size: 3.3rem;
+  }
+  .devloper-txt-box p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .container {
+    max-width: 1320px !important;
+  }
+  .ftr-copy p,
+  .ftr-copy h6,
+  .ftr-links ul li a,
+  .common-para,
+  .features-section .feature-box-item .txt p {
+    font-size: 1rem;
+  }
+  .features-section .feature-box-item .txt h5 {
+    font-size: 1.8rem;
+  }
+  .common-title {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+  }
+  .book-demo-sec .book-demo-txt p,
+  .customer-feedback-box p {
+    font-size: 1.25rem;
+  }
+  .book-demo-sec .book-demo-txt h4 {
+    font-size: 3rem;
+  }
+}
