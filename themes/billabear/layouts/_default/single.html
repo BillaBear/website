@@ -1,0 +1,55 @@
+{{ define "main" }}
+
+{{- partial "menu.html" . -}}
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-8">
+
+                <section id="article">
+                    <h1 id="title">{{ .Title }}</h1>
+
+                    <section>
+                        <p><strong>Written by:</strong> {{ $.Param "author.display_name" }} <strong>Published on:</strong> {{ .Date.Format "Mon Jan 2, 2006" }}</p>
+                    </section>
+                    <div>
+                      <article id="content">
+                        {{ .Content }}
+                      </article>
+                    </div>
+                  </section>
+
+
+            </div>
+            <div class="col-sm-4">col-sm-4</div>
+
+
+        </div>
+  <aside id="meta">
+    <div>
+      {{ with .GetTerms "topics" }}
+        <ul id="topics">
+          {{ range . }}
+            <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+          {{ end }}
+        </ul>
+      {{ end }}
+      {{ with .GetTerms "tags" }}
+        <ul id="tags">
+          {{ range . }}
+            <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    </div>
+    <div>
+      {{ with .PrevInSection }}
+        <a class="previous" href="{{ .Permalink }}"> {{ .Title }}</a>
+      {{ end }}
+      {{ with .NextInSection }}
+        <a class="next" href="{{ .Permalink }}"> {{ .Title }}</a>
+      {{ end }}
+    </div>
+  </aside></div>
+
+{{ end }}
