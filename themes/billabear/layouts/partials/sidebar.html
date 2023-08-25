@@ -1,3 +1,7 @@
+
+{{ $s := site.Params }}
+{{- $posts := where .Site.RegularPages "Type" "in" $s.mainSections }}
+
 <div class="sidebar">
     <div class="sidebar-panel">
         <div class="sidebar-header">
@@ -7,7 +11,7 @@
         
             <ul>
                 <!-- orders content according to the "publishdate" field in front matter -->
-                {{ range first 10 .Pages.ByPublishDate }}
+                {{- range first 10 $posts }}
                   <li>
                     <a href="{{ .Permalink }}">{{ .Title }}</a>
                   </li>
