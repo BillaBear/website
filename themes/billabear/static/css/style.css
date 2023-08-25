@@ -833,3 +833,19 @@ html {
   list-style: disc;
   margin-left: 25px;
 }
+
+
+a.title {
+  text-decoration: none;
+}
+a.title:hover {
+  color: #F58C00;
+}
+
+
+a.more {
+  text-decoration: underline;
+}
+a.more:hover {
+  color: #F58C00;
+}

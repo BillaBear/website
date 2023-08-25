@@ -12,12 +12,13 @@
 
 
       {{ range first 5 .Pages }}
-      <a href="{{ .Permalink }}"><h2 class="article-title">{{ .Title }}</h1></a>
+      <a href="{{ .Permalink }}" class="title"><h2 class="article-title">{{ .Title }}</h1></a>
 
                     <div>
                       <article id="content">
                         {{ .Summary }}
                       </article>
+                      <p><a href="{{ .Permalink }}" class="more">Read More...</a></p>
                     </div>
                   </section>
 
