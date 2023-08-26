@@ -769,6 +769,10 @@ html {
   }
 }
 
+.article {
+  margin-bottom: 25px;;
+}
+
 .article-title {
   font-size: 2.5rem !important;
   padding-bottom: 1rem;
