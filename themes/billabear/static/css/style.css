@@ -807,7 +807,7 @@ html {
 
 .sidebar-panel {
   border: 1px solid #FAD000;
-  border-radius: 5px;;
+  border-radius: 15px;;
 }
 
 .sidebar-header {
@@ -816,6 +816,8 @@ html {
   color: white;
   font-weight: bold;
   background-color: #FAD000;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .sidebar-content {
