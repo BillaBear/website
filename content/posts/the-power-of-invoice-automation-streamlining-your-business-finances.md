@@ -3,7 +3,7 @@ title: "The Power of Invoice Automation: Streamlining Your Business Finances"
 date: 2023-08-26T11:08:22+02:00
 draft: false
 author:
-  display_name: Mimi H.
+  display_name: Laura X
 meta:
   keywords: Invoice Management, invoice automation, software, SaaS Business, Software as a Service, BillaBear
   description: Explore how invoice automation software can streamline SaaS business operations, enhance customer experience, and drive growth.
