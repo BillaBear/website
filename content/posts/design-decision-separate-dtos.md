@@ -2,6 +2,12 @@
 title: "Design Decision Separate Dtos"
 date: 2023-08-28T11:04:50+02:00
 draft: false
+author:
+  display_name: Iain Cambridge
+meta:
+  keywords: subscription management software, SaaS Business, Software as a Service, BillaBear
+  description: Discusses why it was decided to use separate DTOs over other options
+  title: Design Decision Separate Dtos
 ---
 One of the decisions that had to be made early on was how to handle the input and output for the API endpoints. There are a few options such as serialising the entity and serialisation configuration is used to decide what is shown and when. Another option is to create a defined DTO that defines what should be there.
 
