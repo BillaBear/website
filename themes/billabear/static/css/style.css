@@ -855,3 +855,93 @@ a.more {
 a.more:hover {
   color: #F58C00;
 }
+
+
+table.compare th {
+  background-color: #F58C00;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+}
+
+table.compare thead th:first-child {
+  border-top-left-radius: 15px;
+}
+table.compare thead th:last-child {
+  border-top-right-radius: 15px;
+}
+
+
+table.compare tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 15px;
+}
+table.compare tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 15px;
+}
+
+.compare_feature_name {
+  background-color: #F58C00;
+  color: white;
+  font-weight: bold;
+}
+
+table.compare td {
+  padding: 15px;
+  vertical-align:top;
+}
+
+table.compare tr:nth-child(odd) {
+  background-color: #f7cf9c;
+}
+
+table.compare tr:nth-child(even) {
+  background-color: #fff3e3;
+}
+
+
+.compare_list ul {
+  padding-bottom: 0.5rem;
+}
+
+.compare_list li {
+  list-style: disc;
+  margin-left: 1rem;
+}
+
+
+.hero_btn a:first-child {
+  display: inline-flex;
+  padding: 1.0625rem 1.875rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 6.25rem;
+  background: var(--linear, linear-gradient(180deg, #000000 0%, #303030 100%));
+  color: #FFF;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 0.875rem;
+  text-transform: capitalize;
+  display: inline-block;
+  padding: 1.06rem 1.88rem;
+  transition: all linear 0.2s;
+}
+.hero_btn a:first-child {
+  border-radius: 6.25rem;
+  background: var(--linear, linear-gradient(180deg,#a1a1a1 0%,  #000000 100%));
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  display: inline-block;
+  padding: 1.06rem 1.88rem;
+  transition: all linear 0.2s;
+  margin-right: 1rem;
+}
+
+.hero_btn a:first-child:hover {
+  background: var(--linear, linear-gradient(180deg,#000000 0%,  #a1a1a1 100%));
+}

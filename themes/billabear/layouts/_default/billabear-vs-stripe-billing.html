@@ -1,0 +1,258 @@
+{{ define "main" }}
+
+    {{- partial "menu.html" . -}}
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="hero-txt-wrap">
+              <h1>Compared with Stripe Billing</h1>
+              <p>See how BillaBear compares to Stripe Billing</p>
+              <div class="hero_btn">
+                <a href="https://app.sessions.us/book/950e63e2-billabear---demo" class="common-bttn">Book Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="developer-section pa-y6">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <table class="compare">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>BillaBear</th>
+                        <th>Stripe Billing</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="compare_feature_name">Pricing</td>
+                        <td>
+                          For any amount
+                          <br /><br />
+                          <ul class="compare_list">
+                            <li>&pound;2,000 Perpetual license and 1-year of updates</li>
+                          </ul>
+
+                          <br /><strong>Total per year &pound;2,000</strong>.
+                          <br />
+                          <br />With no commitment to continue to pay for upgrades. You can pay once and use it forever.
+                        </td>
+                        <td>
+                          For &pound;80,000 a month with transactions each being &pound;100.
+                          <br /><br />
+                          <ul class="compare_list">
+                            <li>Stripe Billing is &pound;400 a month or &pound;4,800 a year.</li>
+                            <li>Stripe Tax &pound;800; a month or &pound;9,600.</li>
+                            <li>Payment Links is &pound;320; a month or &pound;3840 a year.</li>
+                          </ul>
+
+                          <br /><strong>Total per month: &pound;1,520</strong>.
+                          <br /><strong>Total per year &pound;18,240</strong>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="compare_feature_name">PDF Templates</td>
+                        <td>
+                          <ul class="compare_list">
+                            <li>Complete control over template for invoices</li>
+                            <li>Complete control over template for receipts</li>
+                            <li>Complete control over template for quotes</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul class="compare_list">
+                            <li>Ability to change logo and company details</li>
+                          </ul>                          
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="compare_feature_name">Emails</td>
+                        <td>
+                          <ul class="compare_list">
+                            <li>Complete control over the templates</li>
+                            <li>Ability to have templates for different languages</li>
+                            <li>Integrates with SendGrid</li>
+                            <li>Integrates with MailGun</li>
+                            <li>Integrates with Postmark</li>
+                            <li>Ability to choose which emails are sent</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul class="compare_list">
+                            <li>Ability to change a limited set of options</li>
+                            <li>Ability to choose which emails are sent</li>
+                            <li>No control over deliverability</li>
+                          </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="compare_feature_name">Quotes</td>
+                        <td>
+                          <ul class="compare_list">
+                            <li>Create Quotes</li>
+                            <li>Set a time limit for a quote to Automatically expire</li>
+                            <li>Provide a pay link</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <strong>Requires Premium Plan aka Scale which doubles your cost</strong>
+                          <br /><br />
+                          <ul class="compare_list">
+                            <li>Create Quotes</li>
+                            <li>Provide a pay link</li>
+                          </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="compare_feature_name">One Off Invoicing</td>
+                        <td>
+                          <ul class="compare_list">
+                            <li>Abiility to create an invoice with one-off fees</li>
+                          </ul></td>
+                        <td>
+                          <strong>Requires Premium Plan aka Scale which doubles your cost</strong>
+                          <br /><br />
+                          
+                          <ul class="compare_list">
+                            <li>Abiility to create an invoice with one-off fees</li>
+                          </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="compare_feature_name">White Label/Multiple Brands</td>
+                        <td>
+                          <ul class="compare_list">
+                            <li>Ability to easily define multiple brands </li>
+                            <li>Ability to have different templates for each brand</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul class="compare_list">
+                            <li>Requires a different account or to handle manually</li>
+                          </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="compare_feature_name">Tax</td>
+                        <td>
+                          <ul class="compare_list">
+                            <li>Ability to define custom tax rates for products</li>
+                            <li>Ability to define custom tax rates for customer</li>
+                            <li>Ability to define custom tax rate for brand</li>
+                            <li>Handles EU tax rules</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul class="compare_list">
+                            <li>Handles EU tax rules</li>
+                          </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="compare_feature_name">Multiple Subscriptions/Add-ons</td>
+                        <td>
+                          <ul class="compare_list">
+                            <li>No special work required</li>
+                            <li>Allows for multiple Subscriptions</li>
+                            <li>Allows for add-ons</li>
+                            <li>Handles calculation of limits</li>
+                            <li>Handles pro-rata refunds for multiple subscriptions</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul class="compare_list">
+                            <li>Requires changing from Subscriptions to Subscription Line Items</li>
+                            <li>Refunds become more complex</li>
+                          </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="compare_feature_name">Subscription Plan Management</td>
+                        <td>
+                          <ul class="compare_list">
+                            <li>Allows for defining limits and features for a subscription plan.</li>
+                            <li>Allows for creating custom subscription plans for a specific user.</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul class="compare_list">
+                            <li>Only handles the top overview of products and doesn't help with defining plans.</li>
+                          </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="compare_feature_name">Customer Management</td>
+                        <td>
+                          <ul class="compare_list">
+                            <li>Ability to define custom tax rates</li>
+                            <li>See invoices</li>
+                            <li>See payments</li>
+                            <li>See Refunds</li>
+                            <li>Ability to see credit adjustments</li>
+                            <li>See limits and features from Subscription Plan</li>
+                            <li>See Subscription Plans and <Add-ons></Add-ons></li>
+                            <li>Disable/Enable Customer</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul class="compare_list">
+                            <li>Ability to see invoices</li>
+                            <li>Ability to see payments</li>
+                            <li>Ability to see credit adjustments</li>
+                            <li>Ability to see refunds</li>
+                          </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="compare_feature_name">Charge Backs/Disputes</td>
+                        <td>
+                          <ul class="compare_list">
+                            <li>Shows information and links to Stripe.</li>
+                            <li>Automatically disables a customer who has disputed a payment</li>
+                          </ul>
+                        </td>
+                        <td>  
+                          <ul class="compare_list">
+                            <li>Shows information and allows you to handle dispute.</li>
+                            <li>Disabling the customer is a manual process you have to handle separately.</li>
+                          </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="compare_feature_name">Prevent Billing Churn</td>
+                        <td>
+                          <ul class="compare_list">
+                            <li>Ability to send a pay now link.</li>
+                            <li>Ability to send multiple expired card notifications at various stages - the first day of the month, the day beforehand while still valid, the day beforehand when expired, etc.</li>
+                            <li>Ability to offer a discount if a customer adds a payment card during the expired card notifications stage.</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul class="compare_list">
+                            <li>Ability to send one expired card warning notification.</li>
+                          </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="compare_feature_name">Seperate Environments</td>
+                        <td>The self-hosting option allows you able to create as many of environments as you want.</td>
+                        <td>You have production and test environments.</td>
+                    </tr>
+                    <tr>
+                        <td class="compare_feature_name">Vendor Lock-in</td>
+                        <td>With the ability to self-host and to use without a subscription, you're not locked in to constantly paying more money.</td>
+                        <td>There is a level of lock-in. If you want to stop paying for Stripe Billing you have to make changes to stop using it.</td>
+                    </tr>                    
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- developer finance section @e -->
+    
+{{ end }}
