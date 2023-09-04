@@ -1,5 +1,5 @@
 ---
-title: "Reality of Not Invented Here"
+title: "The Reality of Not Invented Here"
 date: 2023-09-04T15:22:32+02:00
 draft: false
 author:
@@ -7,7 +7,7 @@ author:
 meta:
   keywords: subscription management software, SaaS Business, Software as a Service, BillaBear
   description: Discusses Not invented here and how it really works
-  title: Reality of Not Invented Here
+  title: The Reality of Not Invented Here
 ---
 When I first heard of Not Invented Here (NIH) as a junior developer, I always thought it meant that the company wouldn't use anything external. I thought it would be a case that every tool would be developed internally. I thought it was going to be driven purely by ego that they thought they could do better. And for a long time, I thought I never worked somewhere that had that problem. The reality of NIH is completely different from what I expected and I've been encountering it for far longer than I thought.
 
