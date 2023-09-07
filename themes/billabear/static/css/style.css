@@ -145,7 +145,7 @@ html {
   padding: 2.5rem;
   display: grid;
   grid-template-columns: 50% 50%;
-  min-width: 34rem;
+  min-width: 16rem;
   transform: scale(0);
   visibility: hidden;
   transition: all linear 0.3s;
