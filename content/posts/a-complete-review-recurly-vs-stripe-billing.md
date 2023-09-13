@@ -99,6 +99,9 @@ Now, let's recap and take a look at the features that set these two billing syst
 
 
 ## What's The Right Billing System for You?
+
 We've talked this through already but let me repeat myself: the right billing system is a critical decision that can significantly impact your business operations and revenue. So, what's the final verdict on the two systems we compared?
+
 Both Recurly and Stripe Billing offer a comprehensive set of features that are designed to meet a variety of billing needs. So, either way, you are on the right track. When getting into the details,  Recurly excels in offering a wide range of payment methods and detailed analytics. Stripe Billing, on the other hand, stands out for its easy API integration and smart retries for failed payments.
+
 Each system has its own set of strengths and weaknesses. In the end, the best choice will ultimately depend on your specific business needs and what you prioritize most - this could be payment options, analytics, or flexibility. Think about all the criteria we discussed in this review so you can make a smart and informed decision.
