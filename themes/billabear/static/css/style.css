@@ -804,6 +804,15 @@ html {
   margin-left: 1rem;
 }
 
+.article tbody, td, tfoot, th, thead, tr  {
+  border-width: 1px;
+  padding: 5px !important;
+}
+
+.article table {
+  margin-bottom: 15px;
+}
+
 .sidebar {
   padding-left: 15px;
   padding-right: 15px;
