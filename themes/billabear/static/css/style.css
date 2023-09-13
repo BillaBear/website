@@ -945,3 +945,15 @@ table.compare tr:nth-child(even) {
 .hero_btn a:first-child:hover {
   background: var(--linear, linear-gradient(180deg,#000000 0%,  #a1a1a1 100%));
 }
+
+.pricing_one {
+  border-radius: 1rem;
+  background-color: #f7cf9c;
+  padding: 2rem;
+}
+
+.pricing_two {
+  border-radius: 1rem;
+  background-color: #fff3e3;
+  padding: 2rem;
+}
