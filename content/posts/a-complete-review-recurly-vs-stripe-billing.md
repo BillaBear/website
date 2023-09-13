@@ -90,12 +90,12 @@ Now, let's recap and take a look at the features that set these two billing syst
 
 | Criteria | Recurly | Stripe Billing |
 | --- | --- | --- |
-| Features | Multiple pricing models, add-ons, free trials, coupons, automated/manual invoicing | Flexible billing options, support for coupons, free trials, prorating |
-| Pricing Models | Flat-rate, tiered, usage-based | Flat-rate, tiered, usage-based |
-| Payment Methods | Over 10 types, 20+ payment gateways | Card payments, bank transfers, other popular methods |
-| Subscriber Management | Account hierarchy, multi-subscription support, lifecycle communications | Free trials, upgrades, downgrades, smart retries for failed payments |
-| Analytics and Reporting | Subscriber performance, plan performance, revenue growth | Automated reports, customizable KPIs |
-| Flexibility and Scalability | Highly flexible and scalable, supports multiple currencies | Easy API integration, scales with business growth | 
+| **Features** | Multiple pricing models, add-ons, free trials, coupons, automated/manual invoicing | Flexible billing options, support for coupons, free trials, prorating |
+| **Pricing Models** | Flat-rate, tiered, usage-based | Flat-rate, tiered, usage-based |
+| **Payment Methods** | Over 10 types, 20+ payment gateways | Card payments, bank transfers, other popular methods |
+| **Subscriber Management** | Account hierarchy, multi-subscription support, lifecycle communications | Free trials, upgrades, downgrades, smart retries for failed payments |
+| **Analytics and Reporting** | Subscriber performance, plan performance, revenue growth | Automated reports, customizable KPIs |
+| **Flexibility and Scalability** | Highly flexible and scalable, supports multiple currencies | Easy API integration, scales with business growth | 
 
 
 ## What's The Right Billing System for You?
