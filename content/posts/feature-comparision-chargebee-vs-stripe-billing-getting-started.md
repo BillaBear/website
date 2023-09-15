@@ -73,7 +73,6 @@ There is no startup guide or onboarding process. You are greeted with 6 options 
 
 ![Stripe activated](/images/reviews/stripe/getting-started/activated.png)
 
-
 Since Stripe is mainly a payment gateway with many features such as Stripe Billing. The onboarding process isn’t as smooth as others since it’s not as clear how you intend to use it as it is with other products.
 
 ## Conclusion

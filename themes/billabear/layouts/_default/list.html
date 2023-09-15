@@ -8,11 +8,12 @@
 
             <div class="col-sm-8">
                 <h1> {{ .Title }}</h1>
-                <section class="article">
 
-
-      {{ range first 5 .Pages }}
-      <a href="{{ .Permalink }}" class="title"><h2 class="article-title">{{ .Title }}</h1></a>
+      {{ $paginator := .Paginate (where .Pages "Type" "posts") }}
+      
+      {{ range $paginator.Pages }}
+      <section class="article">
+                <a href="{{ .Permalink }}" class="title"><h2 class="article-title">{{ .Title }}</h1></a>
 
                     <div>
                       <article id="content">
@@ -22,8 +23,37 @@
                     </div>
                   </section>
 
-                  {{ end }}
-
+      {{ end }}
+      {{ if gt $paginator.TotalPages 1 }}
+      <div class="pagination">
+      
+          {{ with $paginator.First }}
+              <!-- if you prefer characters instead use the following line -->
+              <!-- <a href="{{ .URL }}" aria-label="First" class="label-pagination"><span aria-hidden="true">&laquo;&laquo;</span></a> -->
+              <!-- fa-lg is supposedly dynamic size. You can use fa-1x to fa-5x and probably even more, check http://fontawesome.io -->
+              <a href="{{ .URL }}" aria-label="First" class="label-pagination"><i class="fa fa-angle-double-left fa-lg"></i></a>
+          {{ end }}
+      
+          {{ if $paginator.HasPrev }}
+              <a href="{{ if $paginator.HasPrev }}{{ $paginator.Prev.URL }}{{ end }}" aria-label="Previous" class="label-pagination"><i class="fa fa-angle-left fa-lg"></i></a>
+          {{ end }}
+      
+          {{ range $paginator.Pagers }}
+              <a href="{{ .URL }}" class="label-pagination">{{ .PageNumber }}</a>
+          {{ end }}
+      
+          {{ if $paginator.HasNext }}
+              <a href="{{ if $paginator.HasNext }}{{ $paginator.Next.URL }}{{ end }}" aria-label="Next" class="label-pagination"><i class="fa fa-angle-right fa-lg"></i></a>
+          {{ end }}
+      
+          {{ with $paginator.Last }}
+          <!-- <a href="{{ .URL }}" aria-label="Last"><span aria-hidden="true" class="label-pagination">&raquo;&raquo;</span></a> -->
+              <a href="{{ .URL }}" aria-label="Last"><i class="fa fa-angle-double-right fa-lg"></i></a>
+          {{ end }}
+      
+      </div>
+      {{ end }}
+                
             </div>
             <div class="col-sm-4">
                 

@@ -769,8 +769,13 @@ html {
   }
 }
 
+.pagination {
+
+  margin-bottom: 25px;
+}
+
 .article {
-  margin-bottom: 25px;;
+  margin-bottom: 25px;
 }
 
 .article-title {
