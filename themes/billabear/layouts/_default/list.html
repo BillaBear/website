@@ -3,23 +3,23 @@
     {{- partial "menu.html" . -}}
 
 
-    <div class="container">
-        <div class="row">
+    <div class="sm:w-2/3 sm:m-auto">
+        <div class="sm:grid sm:grid-cols-3">
 
-            <div class="col-sm-8">
-                <h1> {{ .Title }}</h1>
+            <div class="sm:col-span-2">
+                <h1 class="text-4xl font-bold mb-12"> {{ .Title }}</h1>
 
       {{ $paginator := .Paginate (where .Pages "Type" "posts") }}
       
       {{ range $paginator.Pages }}
-      <section class="article">
-                <a href="{{ .Permalink }}" class="title"><h2 class="article-title">{{ .Title }}</h1></a>
+      <section class="py-5">
+                <a href="{{ .Permalink }}" class="title"><h2 class="text-2xl font-weight mb-5 hover:underline">{{ .Title }}</h1></a>
 
                     <div>
                       <article id="content">
                         {{ .Summary }}
                       </article>
-                      <p><a href="{{ .Permalink }}" class="more">Read More...</a></p>
+                      <p class="mt-5"><a href="{{ .Permalink }}" class="font-bold hover:underline">Read More...</a></p>
                     </div>
                   </section>
 

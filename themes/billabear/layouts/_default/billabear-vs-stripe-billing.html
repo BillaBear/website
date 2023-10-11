@@ -1,39 +1,42 @@
 {{ define "main" }}
 
     {{- partial "menu.html" . -}}
-    <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="hero-txt-wrap">
-              <h1>Compared with Stripe Billing</h1>
-              <p>See how BillaBear compares to Stripe Billing</p>
-              <div class="hero_btn">
-                <a href="https://app.sessions.us/book/950e63e2-billabear---demo" class="common-bttn">Book Demo</a>
-              </div>
+
+
+    <div class="sm:w-2/3 sm:m-auto">
+      <div class="sm:grid sm:grid-cols-2 sm:gap-5">
+        <div class="col-lg-6">
+          <div class="hero-txt-wrap">
+            <h1 class="text-5xl font-bold mb-5">Compared with Stripe Billing</h1>
+            <p class="mr-5 italic">See how BillaBear compares to Stripe Billing</p>
+            <div class="mt-5">
+              <a href="https://app.sessions.us/book/950e63e2-billabear---demo" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Book Demo</a>
             </div>
           </div>
         </div>
+        <div class="col-lg-6"></div>
       </div>
+    </div>
 
-      <section class="developer-section pa-y6">
+      <section class="sm:w-2/3 sm:m-auto pt-16">
         <div class="container">
           <div class="row">
             <div class="col-12">
               <table class="compare">
                 <thead>
                     <tr>
-                        <th></th>
-                        <th>BillaBear</th>
-                        <th>Stripe Billing</th>
+                        <th class="rounded-tl-xl bg-blue-100 p-3 font-bold p-3 font-bold"></th>
+                        <th class="py-3 bg-blue-100 p-3 font-bold p-3 font-bold">BillaBear</th>
+                        <th class="rounded-tr-xl bg-blue-100 p-3 font-bold">Stripe Billing</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="compare_feature_name">Pricing</td>
-                        <td>
+                        <td class="bg-blue-100 p-3 font-bold">Pricing</td>
+                        <td class="p-4 border border-blue-100 border border-blue-100">
                           For any amount
                           <br /><br />
-                          <ul class="compare_list">
+                          <ul class="list-disc pl-5">
                             <li>&pound;2,000 Perpetual license and 1-year of updates</li>
                           </ul>
 
@@ -41,10 +44,10 @@
                           <br />
                           <br />With no commitment to continue to pay for upgrades. You can pay once and use it forever.
                         </td>
-                        <td>
+                        <td class="p-4 border border-blue-100">
                           For &pound;80,000 a month with transactions each being &pound;100.
                           <br /><br />
-                          <ul class="compare_list">
+                          <ul class="list-disc pl-5">
                             <li>Stripe Billing is &pound;400 a month or &pound;4,800 a year.</li>
                             <li>Stripe Tax &pound;800; a month or &pound;9,600.</li>
                             <li>Payment Links is &pound;320; a month or &pound;3840 a year.</li>
@@ -55,24 +58,24 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="compare_feature_name">PDF Templates</td>
-                        <td>
-                          <ul class="compare_list">
+                        <td class="bg-blue-100 p-3 font-bold">PDF Templates</td>
+                        <td class="p-4 border border-blue-100">
+                          <ul class="list-disc pl-5">
                             <li>Complete control over template for invoices</li>
                             <li>Complete control over template for receipts</li>
                             <li>Complete control over template for quotes</li>
                           </ul>
                         </td>
-                        <td>
-                          <ul class="compare_list">
+                        <td class="p-4 border border-blue-100">
+                          <ul class="list-disc pl-5">
                             <li>Ability to change logo and company details</li>
                           </ul>                          
                         </td>
                     </tr>
                     <tr>
-                        <td class="compare_feature_name">Emails</td>
-                        <td>
-                          <ul class="compare_list">
+                        <td class="bg-blue-100 p-3 font-bold">Emails</td>
+                        <td class="p-4 border border-blue-100">
+                          <ul class="list-disc pl-5">
                             <li>Complete control over the templates</li>
                             <li>Ability to have templates for different languages</li>
                             <li>Integrates with SendGrid</li>
@@ -81,8 +84,8 @@
                             <li>Ability to choose which emails are sent</li>
                           </ul>
                         </td>
-                        <td>
-                          <ul class="compare_list">
+                        <td class="p-4 border border-blue-100">
+                          <ul class="list-disc pl-5">
                             <li>Ability to change a limited set of options</li>
                             <li>Ability to choose which emails are sent</li>
                             <li>No control over deliverability</li>
@@ -90,72 +93,72 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="compare_feature_name">Quotes</td>
-                        <td>
-                          <ul class="compare_list">
+                        <td class="bg-blue-100 p-3 font-bold">Quotes</td>
+                        <td class="p-4 border border-blue-100">
+                          <ul class="list-disc pl-5">
                             <li>Create Quotes</li>
                             <li>Set a time limit for a quote to Automatically expire</li>
                             <li>Provide a pay link</li>
                           </ul>
                         </td>
-                        <td>
+                        <td class="p-4 border border-blue-100">
                           <strong>Requires Premium Plan aka Scale which doubles your cost</strong>
                           <br /><br />
-                          <ul class="compare_list">
+                          <ul class="list-disc pl-5">
                             <li>Create Quotes</li>
                             <li>Provide a pay link</li>
                           </ul>
                         </td>
                     </tr>
                     <tr>
-                        <td class="compare_feature_name">One Off Invoicing</td>
-                        <td>
-                          <ul class="compare_list">
+                        <td class="bg-blue-100 p-3 font-bold">One Off Invoicing</td>
+                        <td class="p-4 border border-blue-100">
+                          <ul class="list-disc pl-5">
                             <li>Abiility to create an invoice with one-off fees</li>
                           </ul></td>
-                        <td>
+                        <td class="p-4 border border-blue-100">
                           <strong>Requires Premium Plan aka Scale which doubles your cost</strong>
                           <br /><br />
                           
-                          <ul class="compare_list">
+                          <ul class="list-disc pl-5">
                             <li>Abiility to create an invoice with one-off fees</li>
                           </ul>
                         </td>
                     </tr>
                     <tr>
-                        <td class="compare_feature_name">White Label/Multiple Brands</td>
-                        <td>
-                          <ul class="compare_list">
+                        <td class="bg-blue-100 p-3 font-bold">White Label/Multiple Brands</td>
+                        <td class="p-4 border border-blue-100">
+                          <ul class="list-disc pl-5">
                             <li>Ability to easily define multiple brands </li>
                             <li>Ability to have different templates for each brand</li>
                           </ul>
                         </td>
-                        <td>
-                          <ul class="compare_list">
+                        <td class="p-4 border border-blue-100">
+                          <ul class="list-disc pl-5">
                             <li>Requires a different account or to handle manually</li>
                           </ul>
                         </td>
                     </tr>
                     <tr>
-                        <td class="compare_feature_name">Tax</td>
-                        <td>
-                          <ul class="compare_list">
+                        <td class="bg-blue-100 p-3 font-bold">Tax</td>
+                        <td class="p-4 border border-blue-100">
+                          <ul class="list-disc pl-5">
                             <li>Ability to define custom tax rates for products</li>
                             <li>Ability to define custom tax rates for customer</li>
                             <li>Ability to define custom tax rate for brand</li>
                             <li>Handles EU tax rules</li>
                           </ul>
                         </td>
-                        <td>
-                          <ul class="compare_list">
-                            <li>Handles EU tax rules</li>
+                        <td class="p-4 border border-blue-100">
+                          <ul class="list-disc pl-5">
+                            <li>Handles tax rules</li>
                           </ul>
                         </td>
                     </tr>
                     <tr>
-                        <td class="compare_feature_name">Multiple Subscriptions/Add-ons</td>
-                        <td>
-                          <ul class="compare_list">
+                        <td class="bg-blue-100 p-3 font-bold">Multiple Subscriptions/Add-ons</td>
+                        <td class="p-4 border border-blue-100">
+                          <ul class="list-disc pl-5">
                             <li>No special work required</li>
                             <li>Allows for multiple Subscriptions</li>
                             <li>Allows for add-ons</li>
@@ -163,31 +166,31 @@
                             <li>Handles pro-rata refunds for multiple subscriptions</li>
                           </ul>
                         </td>
-                        <td>
-                          <ul class="compare_list">
+                        <td class="p-4 border border-blue-100">
+                          <ul class="list-disc pl-5">
                             <li>Requires changing from Subscriptions to Subscription Line Items</li>
                             <li>Refunds become more complex</li>
                           </ul>
                         </td>
                     </tr>
                     <tr>
-                        <td class="compare_feature_name">Subscription Plan Management</td>
-                        <td>
-                          <ul class="compare_list">
+                        <td class="bg-blue-100 p-3 font-bold">Subscription Plan Management</td>
+                        <td class="p-4 border border-blue-100">
+                          <ul class="list-disc pl-5">
                             <li>Allows for defining limits and features for a subscription plan.</li>
                             <li>Allows for creating custom subscription plans for a specific user.</li>
                           </ul>
                         </td>
-                        <td>
-                          <ul class="compare_list">
+                        <td class="p-4 border border-blue-100">
+                          <ul class="list-disc pl-5">
                             <li>Only handles the top overview of products and doesn't help with defining plans.</li>
                           </ul>
                         </td>
                     </tr>
                     <tr>
-                        <td class="compare_feature_name">Customer Management</td>
-                        <td>
-                          <ul class="compare_list">
+                        <td class="bg-blue-100 p-3 font-bold">Customer Management</td>
+                        <td class="p-4 border border-blue-100">
+                          <ul class="list-disc pl-5">
                             <li>Ability to define custom tax rates</li>
                             <li>See invoices</li>
                             <li>See payments</li>
@@ -198,8 +201,8 @@
                             <li>Disable/Enable Customer</li>
                           </ul>
                         </td>
-                        <td>
-                          <ul class="compare_list">
+                        <td class="p-4 border border-blue-100">
+                          <ul class="list-disc pl-5">
                             <li>Ability to see invoices</li>
                             <li>Ability to see payments</li>
                             <li>Ability to see credit adjustments</li>
@@ -208,60 +211,60 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="compare_feature_name">Charge Backs/Disputes</td>
-                        <td>
-                          <ul class="compare_list">
+                        <td class="bg-blue-100 p-3 font-bold">Charge Backs/Disputes</td>
+                        <td class="p-4 border border-blue-100">
+                          <ul class="list-disc pl-5">
                             <li>Shows information and links to Stripe.</li>
                             <li>Automatically disables a customer who has disputed a payment</li>
                           </ul>
                         </td>
-                        <td>  
-                          <ul class="compare_list">
+                        <td class="p-4 border border-blue-100">  
+                          <ul class="list-disc pl-5">
                             <li>Shows information and allows you to handle dispute.</li>
                             <li>Disabling the customer is a manual process you have to handle separately.</li>
                           </ul>
                         </td>
                     </tr>
                     <tr>
-                        <td class="compare_feature_name">Prevent Billing Churn</td>
-                        <td>
-                          <ul class="compare_list">
+                        <td class="bg-blue-100 p-3 font-bold">Prevent Billing Churn</td>
+                        <td class="p-4 border border-blue-100">
+                          <ul class="list-disc pl-5">
                             <li>Ability to send a pay now link.</li>
                             <li>Ability to send multiple expired card notifications at various stages - the first day of the month, the day beforehand while still valid, the day beforehand when expired, etc.</li>
                             <li>Ability to offer a discount if a customer adds a payment card during the expired card notifications stage.</li>
                           </ul>
                         </td>
-                        <td>
-                          <ul class="compare_list">
+                        <td class="p-4 border border-blue-100">
+                          <ul class="list-disc pl-5">
                             <li>Ability to send one expired card warning notification.</li>
                           </ul>
                         </td>
                     </tr>
                     <tr>
-                        <td class="compare_feature_name">Seperate Environments</td>
-                        <td>The self-hosting option allows you able to create as many of environments as you want.</td>
-                        <td>You have production and test environments.</td>
+                        <td class="bg-blue-100 p-3 font-bold">Seperate Environments</td>
+                        <td class="p-4 border border-blue-100">The self-hosting option allows you able to create as many of environments as you want.</td>
+                        <td class="p-4 border border-blue-100">You have production and test environments.</td>
                     </tr>
                     <tr>
-                        <td class="compare_feature_name">Vendor Lock-in</td>
-                        <td>With the ability to self-host and to use without a subscription, you're not locked in to constantly paying more money.</td>
-                        <td>There is a level of lock-in. If you want to stop paying for Stripe Billing you have to make changes to stop using it.</td>
+                        <td class="bg-blue-100 p-3 font-bold">Vendor Lock-in</td>
+                        <td class="p-4 border border-blue-100">With the ability to self-host and to use without a subscription, you're not locked in to constantly paying more money.</td>
+                        <td class="p-4 border border-blue-100">There is a level of lock-in. If you want to stop paying for Stripe Billing you have to make changes to stop using it.</td>
                     </tr>   
                     <tr>
-                        <td class="compare_feature_name">Data</td>
-                        <td>Complete control over all the data</td>
-                        <td>Access to a lot of the data.</td>
+                        <td class="bg-blue-100 p-3 font-bold">Data</td>
+                        <td class="p-4 border border-blue-100">Complete control over all the data</td>
+                        <td class="p-4 border border-blue-100">Access to a lot of the data.</td>
                     </tr>                    
                     <tr>
-                        <td class="compare_feature_name">Support</td>
-                        <td>
-                          <ul class="compare_list">
+                        <td class="rounded-bl-xl bg-blue-100 p-3 font-bold">Support</td>
+                        <td class="p-4 border border-blue-100 border border-blue-100">
+                          <ul class="list-disc pl-5">
                             <li>E-Mail</li>
                             <li>Slack</li>
                           </ul>
                         </td>
-                        <td>
-                          <ul class="compare_list">
+                        <td class="rounded-br-xl p-4 border border-blue-100">
+                          <ul class="list-disc pl-5">
                             <li>E-Mail</li>
                             <li>Live Chat</li>
                             <li>Phone</li>

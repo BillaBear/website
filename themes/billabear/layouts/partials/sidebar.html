@@ -2,18 +2,18 @@
 {{ $s := site.Params }}
 {{- $posts := where .Site.RegularPages "Type" "in" $s.mainSections }}
 
-<div class="sidebar">
+<div class="px-3">
     <div class="sidebar-panel">
-        <div class="sidebar-header">
+        <div class="rounded-t-xl font-bold bg-blue-100 p-3 text-xl">
             Latest Posts
         </div>
-        <div class="sidebar-content">
+        <div class="p-3 border border-blue-100 rounded-b-xl">
         
-            <ul>
+            <ul class="list-disc pl-5">
                 <!-- orders content according to the "publishdate" field in front matter -->
                 {{- range first 5 $posts }}
                   <li>
-                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    <a href="{{ .Permalink }}" class="hover:underline hover:text-blue-300">{{ .Title }}</a>
                   </li>
                 {{ end }}
               </ul>
