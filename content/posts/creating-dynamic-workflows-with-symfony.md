@@ -11,13 +11,13 @@ meta:
 ---
 One of the core concepts within BillaBear is creating workflows for events such as creating or cancelling a subscription and receiving payments. There are often many things that need to happen during these process and if one fails you don't want to carry on with the others until the failed process is fixed and you want to be able to continue a failed process with ease instead of complex development work. To help BillaBear users with their processes we've created the ability to add custom steps to the workflows. Here we're going to explain how we used Symfony Workflows to create dynamic workflows.
 
-## Two ways of defining custom Places
+## Places
 
 To ensure the best overall experience for BillaBear users we added two different ways of creating custom Places. You can define them via using code or via the BillaBear admin system. Both have their pros and cons.
 
-### Code
+### Code defined Place
 
-It's possible to define a place in the code. To do this you create a class in the `Custom` namespace, a namespace where it's safe to make custom changes without BillaBear overwriting it in future releases, that implements `App\Workflow\Places\PlacesInterface`. 
+It's possible to define a place in the code. To do this you create a class in the `Custom` namespace, a namespace where it's safe to make custom changes without BillaBear overwriting it in future releases, that implements `App\Workflow\Places\PlacesInterface`. This is the same interface that it's used by the entity for the Place that is managed via the Admin UI.ß
 
 This class will allow you to define:
 
@@ -36,7 +36,51 @@ This class will allow you to define:
 * Can't be enabled/disabled without code changes and a deployment
 * Can't reuse the dyanmic event handlers
 
-### Admin UI
+### Admin UI dedined Place
 
+It's possible to add extra places within the workflow via the admin system, this can be very useful for creating webhooks for adding steps to your processes.
 
+Creating a place via this will allow you to:
 
+* Define the name of the place
+* The pre-defined event handler
+* Set options for the event handler
+
+#### Pros
+
+* Ability to disable and enable without development work
+* Can use the dynamic event handlers.
+
+#### Cons
+
+* Can't be tracked by the development team
+* Can't use a custom event handler
+
+## Dyanmic Transition Handlers
+
+BillaBear ships with some dynamic event handlers but you're also able to create your own by implementing `App\Workflow\TransitionHandlers\DynamicTransitionHandlerInterface` any class that implements this interface will automatically be collected into the DyanmicTransitionHandlerProvider.
+
+```
+interface DynamicTransitionHandlerInterface
+{
+    public function getName(): string;
+
+    public function getOptions(): array;
+
+    public function execute(Event $event): void;
+
+    /**
+     * Added to allow the handler to have the transition to get the handler options. Otherwise,
+     * the only other option is to fetch the workflow transition in the workflow processor, and
+     * it makes no sense to fetch the data in two different places. And this allows more overall
+     * flexibility since they'll have access to all the data when executing the handler.
+     */
+    public function createCloneWithTransition(WorkflowTransition $transition): DynamicTransitionHandlerInterface;
+}
+```
+
+## Building the Workflow
+
+To create the workflow we use the [WorkflowBuilder](https://github.com/billabear/billabear/blob/13bb4adfea3937eb1d47c0748e8811a0b75f73c8/src/App/Workflow/WorkflowBuilder.php) which does the following tasks.
+
+It fetches the places for the workflow for the
