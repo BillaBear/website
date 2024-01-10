@@ -60,7 +60,7 @@ Creating a place via this will allow you to:
 
 BillaBear ships with some dynamic event handlers but you're also able to create your own by implementing `App\Workflow\TransitionHandlers\DynamicTransitionHandlerInterface` any class that implements this interface will automatically be collected into the DyanmicTransitionHandlerProvider.
 
-```
+```php
 interface DynamicTransitionHandlerInterface
 {
     public function getName(): string;
@@ -79,8 +79,23 @@ interface DynamicTransitionHandlerInterface
 }
 ```
 
+
 ## Building the Workflow
 
 To create the workflow we use the [WorkflowBuilder](https://github.com/billabear/billabear/blob/13bb4adfea3937eb1d47c0748e8811a0b75f73c8/src/App/Workflow/WorkflowBuilder.php) which does the following tasks.
 
-It fetches the places for the workflow for the
+It fetches the places for the workflow from the PlacesProvider which returns the places in order. Then it's a case of building building the Symfony Workflow Definition.
+
+* The first argument for the Definition is an array of strings that contain the names for each Place. 
+* The second argument for Definition is an array of Symfony Workflow Transitions with the transitions building being linked from each other in order as being in the array. 
+* The third argument is an array of strings with the starting positions for a workflow. In our case we just take the first value from the array of Place names since it's in order.
+* The fourt and final argument is a MetadataStoreInterface, which we just the use the default InMemoryMetadataStore with two empty arrays and an instance of 
+
+```php
+        $definition = new Definition(
+            $this->getPlaceNames($places),
+            $this->getTransitions($places),
+            [$this->getPlaceNames($places)[0]],
+            new \Symfony\Component\Workflow\Metadata\InMemoryMetadataStore([], [], new \SplObjectStorage())
+        );
+```
