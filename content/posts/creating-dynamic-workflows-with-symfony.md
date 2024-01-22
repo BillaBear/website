@@ -1,6 +1,6 @@
 ---
 title: "Creating Dynamic Workflows With Symfony"
-date: 2024-01-29T01:56:07+02:00
+date: 2024-01-18T01:56:07+02:00
 draft: true
 author:
   display_name: Iain Cambridge
@@ -89,7 +89,7 @@ It fetches the places for the workflow from the PlacesProvider which returns the
 * The first argument for the Definition is an array of strings that contain the names for each Place. 
 * The second argument for Definition is an array of Symfony Workflow Transitions with the transitions building being linked from each other in order as being in the array. 
 * The third argument is an array of strings with the starting positions for a workflow. In our case we just take the first value from the array of Place names since it's in order.
-* The fourt and final argument is a MetadataStoreInterface, which we just the use the default InMemoryMetadataStore with two empty arrays and an instance of 
+* The fourth and final argument is a MetadataStoreInterface, which we just the use the default InMemoryMetadataStore with two empty arrays and an instance of 
 
 ```php
         $definition = new Definition(
@@ -99,3 +99,7 @@ It fetches the places for the workflow from the PlacesProvider which returns the
             new \Symfony\Component\Workflow\Metadata\InMemoryMetadataStore([], [], new \SplObjectStorage())
         );
 ```
+
+### Building the Transitions
+
+The transitions are built by using

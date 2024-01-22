@@ -978,3 +978,7 @@ table.compare tr:nth-child(even) {
   background-color: #fff3e3;
   padding: 2rem;
 }
+
+.highlight {
+  overflow: scroll;
+}
