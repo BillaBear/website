@@ -103,3 +103,29 @@ It fetches the places for the workflow from the PlacesProvider which returns the
 ### Building the Transitions
 
 The transitions are built by using
+
+```php
+    /**
+     * @param PlaceInterface[] $places
+     *
+     * @return Transition[]
+     */
+    private function getTransitions(array $places): array
+    {
+        $output = [];
+        $from = null;
+        foreach ($places as $place) {
+            if ($from instanceof PlaceInterface) {
+                $output[] = new Transition(
+                    $place->getToTransitionName(),
+                    $from->getName(),
+                    $place->getName(),
+                );
+            }
+
+            $from = $place;
+        }
+
+        return $output;
+    }
+```
